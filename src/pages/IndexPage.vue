@@ -1,43 +1,17 @@
 <template>
-	<q-page class="row items-center justify-evenly">
-		<carousel-index />
-		<example-component
-			title="🥐 TODO"
-			:todos="todos"
-			:meta="meta"
-		/>
-	</q-page>
+  <q-page class="flex flex-center">
+    <img
+      alt="Quasar logo"
+      src="~assets/quasar-logo-vertical.svg"
+      style="width: 200px; height: 200px"
+    >
+  </q-page>
 </template>
 
-<script setup lang="ts">
-import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
-import CarouselIndex from 'src/components/CarouselIndex.vue';
-import { ref } from 'vue';
+<script>
+import { defineComponent } from 'vue'
 
-const todos = ref<Todo[]>([
-	{
-		id: 1,
-		content: 'Ir comprar pão',
-	},
-	{
-		id: 2,
-		content: 'Lavar roupa',
-	},
-	{
-		id: 3,
-		content: 'Dormir',
-	},
-	{
-		id: 4,
-		content: 'Assistir HunterXHunter',
-	},
-	{
-		id: 5,
-		content: 'Procurar trabaio',
-	},
-]);
-const meta = ref<Meta>({
-	totalCount: 1200,
-});
+export default defineComponent({
+  name: 'IndexPage'
+})
 </script>

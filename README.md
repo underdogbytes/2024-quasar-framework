@@ -1,6 +1,6 @@
 # Quaso App (quaso)
 
-Quaso :v
+a quaso project
 
 ## Install the dependencies
 ```bash
